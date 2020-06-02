@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__aside">
+        <div class="aside__images">
+          <img
+            class="selected"
+            src="https://www.instagram.com/static/images/homepage/screenshot1-2x.jpg/9144d6673849.jpg"
+          />
+          <img
+            src="https://instagram.com/static/images/homepage/screenshot5-2x.jpg/5e04169b9308.jpg"
+          />
+          <img
+            src="https://instagram.com/static/images/homepage/screenshot2-2x.jpg/177140221987.jpg"
+          />
+        </div>
+      </div>
+      <div class="main__section">
+        <div class="login">
+          <div class="login__logo">
+            <img src="img/logo_text.png" alt="logo" />
+          </div>
+          <form action="post" name="login-info" id="login-form">
+            <div class="login__form-control">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="전화번호, 사용자 이름 또는 이메일"
+                maxlength="75"
+              />
+            </div>
+            <div class="login__form-control">
+              <input
+                type="password"
+                name="user-password"
+                id="user-password"
+                placeholder="비밀번호"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                form="login-form"
+                onclick="location.href='main.html'"
+                class="login-btn disabled"
+                disabled
+              >
+                로그인
+              </button>
+            </div>
+          </form>
+          <div class="login__break-line">
+            <div></div>
+            <div>또는</div>
+            <div></div>
+          </div>
+          <div>
+            <button class="fb-login-btn">
+              <div class="fb-icon"></div>
+              <span>Facebook으로 로그인</span>
+            </button>
+          </div>
+          <div class="find-password">
+            <a class="find-password-btn" href="#">비밀번호를 잊으셨나요?</a>
+          </div>
+        </div>
+        <div class="sign-up">
+          <div class="sign-up__text">
+            <p>계정이 없으신가요? <a href="#">가입하기</a></p>
+          </div>
+        </div>
+        <div class="app-download">
+          <p>앱을 다운로드하세요.</p>
+          <div class="app-download__apps">
+            <a
+              class="apps__app-store"
+              href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+            >
+              <img
+                src="https://instagram.com/static/images/appstore-install-badges/badge_ios_korean-ko.png/4a5c9d62d51b.png"
+                alt="App Store에서 이용 가능"
+              />
+            </a>
+            <a
+              class="apps__google-play"
+              href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D1B78E4A3-9952-43DA-BAB4-39AAF6D4661D%26utm_content%3Dlo%26utm_medium%3Dbadge"
+            >
+              <img
+                src="https://instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png"
+                alt="Google Play에서 이용 가능"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>

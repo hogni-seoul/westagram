@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="logo">
+          <a href="main.html">
+            <img src="img/logo_text.png" />
+          </a>
+        </div>
+        <div class="search-box">
+          <input class="search-input" type="text" placeholder="검색" />
+          <div class="search-fake">
+            <i class="fas fa-search"></i>
+            <span>검색</span>
+          </div>
+          <i class="fas fa-search search-input-icon"></i>
+          <i class="fas fa-times-circle search-input-icon"></i>
+        </div>
+        <ul class="icons">
+          <li class="icon">
+            <a href="#">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                alt="탐색"
+              />
+            </a>
+          </li>
+          <li class="icon">
+            <a href="#">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                alt="하트"
+              />
+            </a>
+          </li>
+          <li class="icon">
+            <a href="#">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                alt="마이페이지"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="feeds">
+        <article class="article">
+          <header class="article__header">
+            <div class="writer-img">
+              <a href="https://www.instagram.com/vancityreynolds/">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/67563378_539439043460568_7186379751144030208_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=O__QoRaSfiAAX93pdBW&oh=ba021450db4343c95f88e43d19a0604e&oe=5EFD496B"
+                />
+              </a>
+            </div>
+            <div class="writer-info">
+              <a href="https://www.instagram.com/vancityreynolds/">
+                <span class="writer-id">vancityreynolds</span>
+              </a>
+            </div>
+            <a class="dots" href="#">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+              />
+            </a>
+          </header>
+          <div class="article__main">
+            <img
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/95138202_1495401267334965_3205588561995658507_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=1NnuZkta9_4AX-_gjzA&oh=831d9234f49b2e813c61849e01c087ed&oe=5EFE9662"
+            />
+          </div>
+          <div class="footer">
+            <div class="footer__icons">
+              <div class="icons-left">
+                <a href="#">
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                  />
+                </a>
+              </div>
+              <div class="icons-right">
+                <a href="#">
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer__likes">
+              좋아요 <span class="likes-count">1,222개</span>
+            </div>
+            <div class="footer__comments">
+              <div class="comment-box">
+                <a href="#" class="commenter">b891212</a>
+                <span class="comment">Villaneeeeelllleeee</span>
+              </div>
+            </div>
+            <div class="post-date">
+              <span>9시간 전</span>
+            </div>
+          </div>
+          <form id="form-comment">
+            <input type="text" placeholder="댓글 달기..." />
+            <button
+              type="submit"
+              form="form-comment"
+              class="add-btn disabled"
+              disabled
+            >
+              게시
+            </button>
+          </form>
+        </article>
+      </div>
+      <div class="main-right">
+        <div class="container">
+          <div class="right-content">
+            <div class="user">
+              <div class="user-img">
+                <a href="https://www.instagram.com/wecode_bootcamp/">
+                  <img
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=S3mzigW6JpEAX_rrm4S&oh=42c7c30c8dc3bf608432cc8b464c1823&oe=5EFC56F0"
+                  />
+                </a>
+              </div>
+              <div class="user-info">
+                <a href="https://www.instagram.com/wecode_bootcamp/">
+                  <span class="user-id">wecode_bootcamp</span>
+                </a>
+                <span class="user-small">wecode</span>
+              </div>
+            </div>
+            <div class="friends">
+              <div class="more-friends">
+                <span>회원님을 위한 추천</span>
+                <a href="#">모두 보기</a>
+              </div>
+              <div class="user friend">
+                <div class="user-img friend-img">
+                  <a href="https://www.instagram.com/therock/">
+                    <img
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/11850309_1674349799447611_206178162_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=jLC83uih3LEAX-zPr_-&oh=1097ff5e84ec1b172fe8040911a0cc5d&oe=5EFE8D04"
+                    />
+                  </a>
+                </div>
+                <div class="user-info friend-info">
+                  <a href="https://www.instagram.com/therock/">
+                    <span class="user-id friend-id">therock</span>
+                  </a>
+                  <span class="user-small friend-small"
+                    >회원님을 팔로우합니다.</span
+                  >
+                </div>
+                <div class="friend-follow">
+                  <a href="#">팔로우</a>
+                </div>
+              </div>
+              <div class="user friend">
+                <div class="user-img friend-img">
+                  <a href="https://www.instagram.com/disney/">
+                    <img
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/47230425_762096257473802_4803437947208597504_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=AhytiM-Dh90AX_WkJUv&oh=6d9e99468c2c8b039090f0a56d56cb20&oe=5EFCFBD1"
+                    />
+                  </a>
+                </div>
+                <div class="user-info friend-info">
+                  <a href="https://www.instagram.com/disney/">
+                    <span class="user-id friend-id">disney</span>
+                  </a>
+                  <span class="user-small friend-small"
+                    >회원님을 팔로우합니다.</span
+                  >
+                </div>
+                <div class="friend-follow">
+                  <a href="#">팔로우</a>
+                </div>
+              </div>
+              <div class="user friend">
+                <div class="user-img friend-img">
+                  <a href="https://www.instagram.com/vancityreynolds/">
+                    <img
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/67563378_539439043460568_7186379751144030208_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=O__QoRaSfiAAX93pdBW&oh=ba021450db4343c95f88e43d19a0604e&oe=5EFD496B"
+                    />
+                  </a>
+                </div>
+                <div class="user-info friend-info">
+                  <a href="https://www.instagram.com/vancityreynolds/">
+                    <span class="user-id friend-id">vancityreynolds</span>
+                  </a>
+                  <span class="user-small friend-small"
+                    >회원님을 팔로우합니다.</span
+                  >
+                </div>
+                <div class="friend-follow">
+                  <a href="#">팔로우</a>
+                </div>
+              </div>
+              <div class="user friend">
+                <div class="user-img friend-img">
+                  <a href="https://www.instagram.com/annemarie/">
+                    <img
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/81963562_164579864824033_8773756005403066368_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6maXT67J-aMAX-4SxRh&oh=b33a9a46b446a467a2475f02cc7fd9c5&oe=5EFCF5C0"
+                    />
+                  </a>
+                </div>
+                <div class="user-info friend-info">
+                  <a href="https://www.instagram.com/annemarie/">
+                    <span class="user-id friend-id">annemarie</span>
+                  </a>
+                  <span class="user-small friend-small"
+                    >회원님을 팔로우합니다.</span
+                  >
+                </div>
+                <div class="friend-follow">
+                  <a href="#">팔로우</a>
+                </div>
+              </div>
+              <div class="user friend">
+                <div class="user-img friend-img">
+                  <a
+                    href="https://www.instagram.com/explore/tags/robertdowneyjr/"
+                  >
+                    <img
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/72702032_542075739927421_3928117925747097600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=CTLIlgGV1CYAX9Od4Tq&oh=41980ab0a2b39e52107f315d686569a4&oe=5F001848"
+                    />
+                  </a>
+                </div>
+                <div class="user-info friend-info">
+                  <a
+                    href="https://www.instagram.com/explore/tags/robertdowneyjr/"
+                  >
+                    <span class="user-id friend-id">robertdowneyjr</span>
+                  </a>
+                  <span class="user-small friend-small"
+                    >회원님을 팔로우합니다.</span
+                  >
+                </div>
+                <div class="friend-follow">
+                  <a href="#">팔로우</a>
+                </div>
+              </div>
+            </div>
+            <div class="infos">
+              <ul>
+                <li>
+                  <a href="https://about.instagram.com/about-us" target="_blank"
+                    >소개</a
+                  >
+                </li>
+                <li>
+                  <a href="https://help.instagram.com/" target="_blank"
+                    >도움말</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram-press.com/" target="_blank"
+                    >홍보 센터</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/developer/" target="_blank"
+                    >API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/about/jobs/"
+                    target="_blank"
+                    >채용 정보</a
+                  >
+                </li>
+                <li>
+                  <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                  <a href="#">약관</a>
+                </li>
+                <li>
+                  <a href="#">위치</a>
+                </li>
+                <li>
+                  <a href="#">인기 계정</a>
+                </li>
+                <li>
+                  <a href="#">해시태그</a>
+                </li>
+                <li>
+                  <a href="#">언어</a>
+                </li>
+              </ul>
+              <span>&copy; 2020 Instagram from Facebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+/* ----- 전체 화면 가운데 정렬 ----- */
+.main {
+  height: 100%;
+  max-width: 935px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- 좌측 스마트폰 이미지 ----- */
+.main__aside {
+  flex: 0 0 454px;
+  height: 618px;
+  background-image: url("https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png");
+  background-size: cover;
+  /* 마진을 음수 값을 주면 요소를 겹치게 할 수 있음 */
+  margin-left: -35px;
+  margin-right: -15px;
+}
+
+.aside__images {
+  position: relative;
+  top: 99px;
+  left: 151px;
+}
+
+.aside__images img {
+  position: absolute;
+  height: 428px;
+  width: auto;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.aside__images img.selected {
+  opacity: 1;
+}
+
+/* ----- 우측 로그인 ----- */
+.main__section {
+  flex: 0 0 350px;
+  margin-top: 12px;
+}
+
+/* ----- 로그인 폼 ----- */
+.login {
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  max-width: 350px;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+}
+
+.login__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 36px;
+}
+
+.login__form-control input {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  background-color: #fafafa;
+  outline: 0;
+  margin-bottom: 6px;
+}
+
+.login__form-control input:focus {
+  border-color: #999;
+}
+
+/*  버튼 활성시  */
+.login-btn {
+  width: 100%;
+  margin: 8px 0;
+  padding: 7px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0095f6;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 버튼 비활성시  */
+.login-btn.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.login__break-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.login__break-line div:nth-child(even) {
+  margin: 0 18px;
+  font-size: 13px;
+  color: #999;
+}
+
+.login__break-line div:nth-child(odd) {
+  flex: 1;
+  border-top: 1px solid #c7c7c7;
+}
+
+.fb-login-btn {
+  width: 100%;
+  margin: 8px 0;
+  font-weight: 700;
+  background-color: transparent;
+  color: #385185;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fb-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url("https://instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png");
+  background-position: 110px 168px;
+  margin-right: 8px;
+}
+
+.find-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #385185;
+}
+
+.find-password-btn {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+/* ----- 가입하기 ----- */
+.sign-up {
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  max-width: 350px;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+.sign-up__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.sign-up__text a {
+  font-weight: 700;
+  color: #0095f6;
+}
+
+/* ----- 앱 다운로드 ----- */
+.app-download {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-download p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.app-download__apps {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.app-download__apps a:first-child {
+  margin-right: 8px;
+}
+
+.app-download__apps a img {
+  height: 40px;
+}
+
+@media screen and (max-width: 875px) {
+  .main__aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    align-items: stretch;
+    background-color: #fff;
+  }
+
+  .main__section {
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .login,
+  .sign-up {
+    border: 0;
+  }
+}
